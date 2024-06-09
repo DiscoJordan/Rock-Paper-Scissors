@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Rock Paper Scissors</title>
+  </head>
+
+  <body>
+    <header></header>
+    <main>
+      <div class="wrapper">
+        <div id="container" class="container">
+          <div id="game" class="game"></div>
+          <div id="gameWindow" class="game__window">
+            <div id="pictures" class="pictures">
+              <button id="rock" class="pictures__picture">
+                <img src="/images/rock.png" alt="rock" />
+              </button>
+              <button id="paper" class="pictures__picture">
+                <img src="/images/paper.png" alt="paper" />
+              </button>
+              <button id="scissors" class="pictures__picture">
+                <img src="/images/scissors.png" alt="scissors" />
+              </button>
+            </div>
+
+            <div id="battlePictures" class="pictures">
+              <div id="myRock" class="pictures__picture">
+                <img src="/images/rock.png" alt="rock" />
+              </div>
+              <div id="myPaper" class="pictures__picture">
+                <img src="/images/paper.png" alt="paper" />
+              </div>
+              <div id="myScissors" class="pictures__picture">
+                <img src="/images/scissors.png" alt="scissors" />
+              </div>
+              <h2>VS</h2>
+              <div id="hisRock" class="pictures__picture">
+                <img src="/images/rock.png" alt="rock" />
+              </div>
+              <div id="hisPaper" class="pictures__picture">
+                <img src="/images/paper.png" alt="paper" />
+              </div>
+              <div id="hisScissors" class="pictures__picture">
+                <img src="/images/scissors.png" alt="scissors" />
+              </div>
+            </div>
+            <a id="newGame" href="index.html">NEW GAME</a>
+          </div>
+          <div id="menu" class="menu">
+            <h2>ROCK PAPER SCISSORS</h2>
+            <form id="form" class="menu__form">
+              <input
+                placeholder="Nickname"
+                id="nickname"
+                class="menu__nickname"
+                type="text"
+              />
+              <button id="start" class="menu__start">Start</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+  <script src="script.js"></script>
+</html>
