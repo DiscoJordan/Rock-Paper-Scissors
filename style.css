@@ -8,6 +8,9 @@ footer {
     bottom: 0;
     
 }
+html{
+    background-color: #191919;
+}
 footer a{
     text-decoration: none;
     display: flex;
@@ -36,7 +39,7 @@ footer a{
 
 .wrapper {
     background-color: var(--backgound-color-main);
-    height: calc(100vh - 76px);
+    min-height: calc(100vh - 76px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,7 +48,6 @@ footer a{
 }
 
 .container {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,6 +60,7 @@ footer a{
     gap: 1em;
     padding: 4em 1em;
     align-items: center;
+    margin-bottom: 50px;
 }
 #battlePictures > div{
     display: none;
@@ -81,6 +84,7 @@ footer a{
     font-weight: 600;
     text-decoration: none;
     margin-top: 2em;
+    margin-bottom: 100px;
 }
 .pictures__picture img{
     width: 100%;
@@ -95,6 +99,7 @@ footer a{
     gap: 2em;
     background-color: rgb(34, 34, 34);
     padding: 5em;
+    margin: 1em 0;
     border-radius: 40px;
    
 }

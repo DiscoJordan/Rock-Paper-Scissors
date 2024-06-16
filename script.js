@@ -52,7 +52,6 @@ let startNewGame = () => {
     playRound();
     container.style.justifyContent = "start";
     game.style.padding = "4em";
-    game.style.height = `30vh`;
   }, 500);
 };
 
