@@ -1,7 +1,29 @@
 :root {
-    --backgound-color-main: #FFEA00;
+    --backgound-color-main: #191919;
 }
-
+footer {
+    z-index: 1;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    
+}
+footer a{
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    gap: 1em;
+    font-size: 0.5em;
+}
+.logo{
+    filter: brightness(100);
+    width: 60px;
+    height: 60px;
+}
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +31,7 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     scroll-behavior: smooth;
+    color: white;
 }
 
 .wrapper {
@@ -48,15 +71,13 @@
     overflow: hidden;
     transition: all 0.2s ease-in-out;
 }
-#pictures .pictures__picture:hover{
-   transform: scale(1.1);
-   cursor: pointer;
-}
+
 #newGame{
     display: none;
-    color: black;
-    padding: 1em;
-    border: 1px solid black;
+    color: rgb(0, 0, 0);
+    background-color: #FFEA00;
+    border-radius: 100px;
+    padding: 1em 2em;
     font-size: 1em;
     font-weight: 600;
     text-decoration: none;
@@ -73,10 +94,10 @@
     flex-direction: column;
     align-items: center;
     gap: 2em;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(34, 34, 34);
     padding: 5em;
     border-radius: 40px;
-    border: 1px solid rgb(255, 255, 255);
+   
 }
 
 form {
@@ -100,24 +121,44 @@ input {
     padding: 0.5em 1em;
     font-size: 1em;
     color: black;
-    background-color: white;
+    background-color: #FFEA00;
     border: 1px black solid;
     border-radius: 100px;
     transition: all 0.3s ease-in-out;
 }
-.menu__start:hover{
-    
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-    border: 1px rgb(255, 255, 255) solid;
-   
-}
+
 .game{
     display: none;
     flex-direction: column;
     gap: 2em;
     align-items: center;
     color: black;
-   
+}
+@media (max-width:768px) {
+  .menu{
+    padding: 3em;
+  }
+  .pictures__picture {
+    width: 100px;
+    height: 100px;
+}
+@media (max-width:425px) {
+  h2{
+    font-size: 1em;
+  }
+}
+@media (hover:hover){
+    #pictures .pictures__picture:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+     }
+    .menu__start:hover{
+    
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        border: 1px #FFEA00 solid;
+       
+    }
 
+}
 }
