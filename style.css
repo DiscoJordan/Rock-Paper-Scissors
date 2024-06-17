@@ -138,6 +138,19 @@ input {
     align-items: center;
     color: black;
 }
+@media (hover:hover){
+    #pictures .pictures__picture:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+     }
+    .menu__start:hover{
+    
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+        border: 1px #FFEA00 solid;
+       
+    }
+
 @media (max-width:768px) {
   .menu{
     padding: 3em;
@@ -151,18 +164,6 @@ input {
     font-size: 1em;
   }
 }
-@media (hover:hover){
-    #pictures .pictures__picture:hover{
-        transform: scale(1.1);
-        cursor: pointer;
-     }
-    .menu__start:hover{
-    
-        color: rgb(255, 255, 255);
-        background-color: rgb(0, 0, 0);
-        border: 1px #FFEA00 solid;
-       
-    }
 
 }
 }
